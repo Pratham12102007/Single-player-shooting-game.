@@ -28,7 +28,7 @@ function setup() {
   // creating bow to shoot arrow
   bow = createSprite(20,220,20,50);
   bow.addImage(bowImage); 
-  bow.scale = 0.3;
+  bow.scale = 0.5;
   
    
   
@@ -116,7 +116,7 @@ function draw() {
   arrow.addImage(arrowImage);
   arrow.x = 20;
   arrow.y=bow.y;
-  arrow.velocityX = 6;
+  arrow.velocityX = 7.3;
   arrow.lifetime = 1000;
   arrow.scale = 0.1;
    arrowGroup.add(arrow)
@@ -125,9 +125,9 @@ function draw() {
 function redBalloon() {
   var red = createSprite(0,Math.round(random(20, 370)), 10, 10);
   red.addImage(red_balloonImage);
-  red.velocityX = 3.5;
+  red.velocityX = 5.9;
   red.lifetime = 1000;
-  red.scale = 0.1;
+  red.scale = 0.4;
   redB.add(red)
   return red
 }
@@ -135,9 +135,9 @@ function redBalloon() {
 function blueBalloon() {
   var blue = createSprite(0,Math.round(random(20, 370)), 10, 10);
   blue.addImage(blue_balloonImage);
-  blue.velocityX = 3.5;
+  blue.velocityX = 5.5;
   blue.lifetime = 1000;
-  blue.scale = 0.1;
+  blue.scale = 0.4;
   blueB.add(blue)
   return blue
 }
@@ -145,9 +145,9 @@ function blueBalloon() {
 function greenBalloon() {
   var green = createSprite(0,Math.round(random(20, 370)), 10, 10);
   green.addImage(green_balloonImage);
-  green.velocityX = 3.5;
+  green.velocityX = 5.8;
   green.lifetime = 1000;
-  green.scale = 0.1;
+  green.scale = 0.4;
   greenB.add(green)
 return green
 }
@@ -155,9 +155,9 @@ return green
 function pinkBalloon() {
   var pink = createSprite(0,Math.round(random(20, 370)), 10, 10);
   pink.addImage(pink_balloonImage);
-  pink.velocityX = 3.5;
+  pink.velocityX = 6;
   pink.lifetime = 1000;
-  pink.scale = 0.1
+  pink.scale = 0.4;
   pinkB.add(pink)
   return pink
 }
